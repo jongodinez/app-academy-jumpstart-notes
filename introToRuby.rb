@@ -55,4 +55,40 @@ def my_to_s(arg)
   def negative(num)
     num = -(num.abs)
   end
+
+  # MEDIUM
+
+# Write a method that returns the last digit of its argument.
+# Assume the argument is an integer.
+# HINT: What is the return value of 142 % 10? How about 2 % 10?
+def last_digit(int)
+    int % 10
+  end
+  
+  # Write a method that returns a boolean indicating whether 
+  # the last digit of the method's argument is odd.
+  # Assume the argument is an integer.
+  # Bonus points if you use last_digit as a helper method.
+  def last_digit_odd?(int)
+    last_digit = int % 10
+    last_digit.odd?
+  end
+  
+  
+  # Write a method that returns the greatest common divisor of the last 
+  # digit of each of its arguments. Assume the arguments are integers.
+  # (gcd_of_last_digits(93, 9) = 3.gcd(9) => 3)
+  # Bonus points if you use last_digit as a helper method.
+  def gcd_of_last_digits(int_one, int_two)
+    int_one.gcd(int_two) % 10
+  end
+  
+  # Write a method that returns the last n digits of its first argument,
+  # where n is the second argument.
+  # Assume both arguments are non-zero integers.
+  # (last_n_digits(1234, 2) => 34)
+  # HINT: What is the return value of 1234 % 100? How about 4 % 100?
+  def last_n_digits(num, n)
+    num % 10**n
+  end
   
