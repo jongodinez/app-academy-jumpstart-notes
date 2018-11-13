@@ -13,3 +13,5 @@ end
 5.0 % 2.0
 4 % 2
 4.0 % 2.0
+
+#methods exercises
