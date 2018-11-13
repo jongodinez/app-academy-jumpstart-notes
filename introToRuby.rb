@@ -91,4 +91,15 @@ def last_digit(int)
   def last_n_digits(num, n)
     num % 10**n
   end
+
+  #HARD
+
+# Write a method that returns the decimal remainder of dividing two floats.
+# The decimal remainder is the right side of the decimal point 
+# (the "fractional part") of the quotient.
+# (dec_remainder_of_two_floats(8.0, 5.0) => 0.6 because 8.0 / 5.0 => 1.6)
+def dec_remainder_of_two_floats(f_dividend, f_divisor)
+    n = f_dividend / f_divisor
+    n - n.floor
+  end
   
