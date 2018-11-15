@@ -61,3 +61,41 @@ def printStep(min,max, step)
 end
 
 printStep(0, 4, 1) # code will iterate the amount of times specified in the step
+
+#exercises
+#method that takes a str & return # of e's in word
+def count_e(word)
+    i = 0
+    while i <= word.length
+        puts word[i] #indexes the
+        i += 1
+    end
+end
+count_e(word) #prints through any str
+
+def count_e(word)
+    counter = 0
+    i = 0
+    while i < word.length
+        if word[i] == "e"
+            counter += 1
+        end    
+        i += 1
+    end
+    return counter
+end
+
+count_e(word) #prints how many "e"'s are in a word
+
+#Write a method count_a(word) that takes in a string word and returns the number of a's in the word. The method should count both lowercase (a) and uppercase (A)
+def count_a(word)
+	counter = 0
+  	i = 0
+  	while i < word.length
+      if word[i] == "a" || word[i] == "A"
+        counter += 1
+      end
+      i += 1
+    end
+  return counter
+end
