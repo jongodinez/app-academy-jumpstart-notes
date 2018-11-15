@@ -9,4 +9,14 @@ end
 
 say_hello #increments "hello" 5 times
 
-#de
+#decrementing
+def print_nums
+    i = 10
+    while i >= 0
+        puts i 
+        i -= 1
+    end
+end
+
+print_nums #decrements 10-1
+
