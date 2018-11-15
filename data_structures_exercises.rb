@@ -163,10 +163,10 @@ def is_palindrome(word)
     palindrome = ""
     i = 0
     while i < word.length
-        palindrome = word[i] + palindrome
+        palindrome = word[i] + palindrome #concats backwards into palindrome
         i += 1
     end
-    return palindrome == word
+    return palindrome == word #compares the newly stored backward word, to the word inputted
 end
 
 puts is_palindrome("racecar")  # => true
