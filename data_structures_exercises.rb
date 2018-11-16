@@ -343,4 +343,40 @@ end
   print factors_of(9)   # => [1, 3, 9]
   puts
   print factors_of(16)  # => [1, 2, 4, 8, 16]
+
+  #Write a method sum_elements(arr1, arr2) that takes in two arrays. The method should return a new array containing the results of adding together corresponding elements of the original arrays. You can assume the arrays have the same length.
+
+def sum_elements(arr1, arr2)
+	i = 0
+  	new_arr = []
+  	while i < arr1.length && arr2.length
+    	new_arr << arr1[i] + arr2[i]
+    	i += 1
+    end
+  	return new_arr
+end
+
+print sum_elements([7, 4, 4], [3, 2, 11])                            # => [10, 6, 15]
+puts
+print sum_elements(["cat", "pizza", "boot"], ["dog", "pie", "camp"]) # => ["catdog", "pizzapie", "bootcamp"]
+
+#Write a method fizz_buzz(max) that takes in a number max and returns an array containing all numbers from 0 to max that are divisible by either 4 or 6, but not both.
+
+def fizz_buzz(max)
+	new_arr = []
+  	i = 0
+  	while i < max
+    	if (i % 4 == 0 || i % 6 == 0) && !(i % 4 == 0 && i % 6 == 0)
+        	new_arr << i
+        end
+      	i += 1
+    end
+  	return new_arr
+end
+
+print fizz_buzz(20) # => [4, 6, 8, 16, 18]
+puts
+print fizz_buzz(15) # => [4, 6, 8]
+
+
   
