@@ -172,3 +172,17 @@ end
 puts is_palindrome("racecar")  # => true
 puts is_palindrome("kayak")    # => true
 puts is_palindrome("bootcamp") # => false
+
+#Write a method doubler(numbers) that takes an array of numbers and returns a new array where every element of the original array is multiplied by 2.
+
+def doubler(numbers)
+    new_arr = []
+    i = 0
+    while i < numbers.length
+        old_numbers = numbers[i]
+        new_numbers = old_numbers * 2
+        new_arr << new_numbers
+        i += 1
+    end
+    return new_arr
+end
