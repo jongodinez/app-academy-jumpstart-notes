@@ -211,3 +211,27 @@ end
 print element_times_index([4, 7, 6, 5])       # => [0, 7, 12, 15]
 puts
 print element_times_index([1, 1, 1, 1, 1, 1]) # => [0, 1, 2, 3, 4, 5]
+
+#Write a method even_nums(max) that takes in a number max and returns an array containing all even numbers from 0 to max
+    #my solution
+def even_nums(max)
+    print (0..max).step(2).to_a
+end
+
+print even_nums(10) # => [0, 2, 4, 6, 8, 10]
+puts
+print even_nums(5)  # => [0, 2, 4]
+
+    #their solution
+def even_nums(max)
+    new_arr = []
+    i = 0
+    while i <= max
+        #if the number is even, then add to the array
+        if i % 2 == 0
+            new_arr << i
+        end
+        i += 1
+    end
+    print new_arr
+end
