@@ -345,7 +345,7 @@ end
   puts
   print factors_of(16)  # => [1, 2, 4, 8, 16]
 
-  #Write a method sum_elements(arr1, arr2) that takes in two arrays. The method should return a new array containing the results of adding together corresponding elements of the original arrays. You can assume the arrays have the same length.
+#Write a method sum_elements(arr1, arr2) that takes in two arrays. The method should return a new array containing the results of adding together corresponding elements of the original arrays. You can assume the arrays have the same length.
 
 def sum_elements(arr1, arr2)
 	i = 0
