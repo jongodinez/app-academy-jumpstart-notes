@@ -318,7 +318,9 @@ def select_odd(numbers)
 end
 
 print select_odd([13, 4, 3, 7, 6, 11]) # => [13, 3, 7, 11]
+
 puts
+
 print select_odd([2, 4, 6])            # => []
 
 #Write a method factors_of(num) that takes in a num and returns an array of all positive numbers less than or equal to num that can divide num.
