@@ -416,7 +416,6 @@ puts
 
 print first_half(["a", "b", "c", "d", "e"])          # => ["a", "b", "c"]
 
-
-
-
-  
+#ARRAY METHOD REVIEW (.push, .pop, .unshift, .shift)
+    #.push & .pop add and remove from the end of an array
+    #.unshift & .shift add and remove from front of an array
