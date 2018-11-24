@@ -435,10 +435,27 @@ puts ele
 puts idx
 end
 
-puts"////"
+puts
 
 sentence = "hello world"
 sentence.each_char.with_index do |char, idx|
   puts char
   puts idx
 end
+
+#fizzbuzz again using enums
+
+def fizzBuzz(max)
+new_arr = []
+(1...max).each do |num|
+    if num % 4 == 0 && num % 6 != 0
+        new_arr << num
+    end
+    if num % 4 != 0 && num % 6 == 0
+        new_arr << num
+    end
+  end
+  return new_arr
+end
+
+print fizzBuzz(20)
