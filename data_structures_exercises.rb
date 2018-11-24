@@ -426,3 +426,19 @@ end
 
 is_palindrome("poop")
 is_palindrome("abcd")
+
+#ENUMERABLE NOTES
+months = ["jan","feb","mar","apr"]
+
+months.each_with_index do |ele, idx|
+puts ele
+puts idx
+end
+
+puts"////"
+
+sentence = "hello world"
+sentence.each_char.with_index do |char, idx|
+  puts char
+  puts idx
+end
