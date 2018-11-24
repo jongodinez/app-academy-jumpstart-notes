@@ -468,3 +468,16 @@ arr.each_with_index do |ele1, idx1|
     puts idx1.to_s + "  " + idx2.to_s
   end
 end
+
+#2-Dimensional Arrays
+arr = [
+  ["a","b","c"],
+  ["d","e","f"],
+  ["g","h","i"]
+]
+
+arr.each do |subArr|
+  subArr.each do |ele|
+    puts ele
+  end
+end #iterates through and separates into indiv elements "abcdefghi"
