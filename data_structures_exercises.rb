@@ -459,3 +459,12 @@ new_arr = []
 end
 
 print fizzBuzz(20)
+
+arr = ["a","b","c","d"]
+
+arr.each_with_index do |ele1, idx1|
+  arr.each_with_index do |ele2, idx2|
+    puts ele1 + ele2
+    puts idx1.to_s + "  " + idx2.to_s
+  end
+end
