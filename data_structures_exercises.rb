@@ -441,6 +441,7 @@ puts
 
 sentence = "hello world"
 sentence.each_char.with_index do |char, idx|
+    
 puts char
 
 puts idx
