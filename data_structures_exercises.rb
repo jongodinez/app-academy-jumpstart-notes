@@ -441,10 +441,10 @@ puts
 
 sentence = "hello world"
 sentence.each_char.with_index do |char, idx|
-  puts char
+puts char
 
-  puts idx
-  
+puts idx
+
 end
 
 #fizzbuzz again using enums
