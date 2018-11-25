@@ -432,7 +432,9 @@ months = ["jan","feb","mar","apr"]
 
 months.each_with_index do |ele, idx|
 puts ele
+
 puts idx
+
 end
 
 puts
