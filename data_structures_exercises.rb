@@ -272,7 +272,9 @@ def select_long_words(words)
 end
 
 print select_long_words(["what", "are", "we", "eating", "for", "dinner"]) # => ["eating", "dinner"]
+
 puts
+
 print select_long_words(["keep", "coding"])                               # => ["coding"]
 
 #Write a method odd_range(min, max) that takes in two numbers min and max. The method should return an array containing all odd numbers from min to max (inclusive).
