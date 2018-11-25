@@ -496,3 +496,29 @@ arr.each do |subArr|
     puts ele
   end
 end #iterates through and separates into indiv elements "abcdefghi"
+
+#Write a method to_initials that takes in a person's name string and returns a string representing their initials.
+def to_initials(name)
+    parts  = name.split(" ")
+    initials = ""
+    parts.each { |part| initials += part[0] }
+    return initials
+  end
+  
+  puts to_initials("Kelvin Bridges")      # => "KB"
+  puts to_initials("Michaela Yamamoto")   # => "MY"
+  puts to_initials("Mary La Grange")      # => "MLG"
+  
+
+#Write a method format_name that takes in a name string and returns the name properly capitalized.
+def format_name(str)
+	parts = str.split(" ")
+  	properlyCapArr = []
+	parts.each do |part|
+    	properlyCapArr << part[0].upcase + part[1..-1].downcase
+    end
+  	return properlyCapArr.join(" ")
+end
+
+puts format_name("chase WILSON") # => "Chase Wilson"
+puts format_name("brian CrAwFoRd scoTT") # => "Brian Crawford Scott"
