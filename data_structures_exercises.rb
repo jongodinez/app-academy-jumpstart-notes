@@ -219,6 +219,7 @@ def even_nums(max)
 end
 
 print even_nums(10) # => [0, 2, 4, 6, 8, 10]
+
 puts
 print even_nums(5)  # => [0, 2, 4]
 
@@ -243,7 +244,9 @@ def range(min, max)
 end
 
 print range(2, 7)   # => [2, 3, 4, 5, 6, 7]
+
 puts
+
 print range(13, 20) # => [13, 14, 15, 16, 17, 18, 19, 20]
 
     #their solution
@@ -292,7 +295,9 @@ def odd_range(min, max)
 end
 
 print odd_range(11, 18) # => [11, 13, 15, 17]
+
 puts
+
 print odd_range(3, 7)
 
 #Write a method select_odds(numbers) that takes in an array of numbers and returns a new array containing the odd numbers of the original array.
@@ -371,8 +376,10 @@ def sum_elements(arr1, arr2)
   	return new_arr
 end
 
-print sum_elements([7, 4, 4], [3, 2, 11])                            # => [10, 6, 15]
+print sum_elements([7, 4, 4], [3, 2, 11])    
+                        # => [10, 6, 15]
 puts
+
 print sum_elements(["cat", "pizza", "boot"], ["dog", "pie", "camp"]) # => ["catdog", "pizzapie", "bootcamp"]
 
 #Write a method fizz_buzz(max) that takes in a number max and returns an array containing all numbers from 0 to max that are divisible by either 4 or 6, but not both.
@@ -461,6 +468,7 @@ end
 #fizzbuzz again using enums
 
 def fizzBuzz(max)
+
 new_arr = []
 (1...max).each do |num|
     if num % 4 == 0 && num % 6 != 0
@@ -485,6 +493,7 @@ arr.each_with_index do |ele1, idx1|
 end
 
 #2-Dimensional Arrays
+
 arr = [
   ["a","b","c"],
   ["d","e","f"],
