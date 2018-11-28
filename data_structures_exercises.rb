@@ -172,6 +172,7 @@ end
 puts is_palindrome("racecar")  # => true
 
 puts is_palindrome("kayak")    # => true
+
 puts is_palindrome("bootcamp") # => false
 
 #Write a method doubler(numbers) that takes an array of numbers and returns a new array where every element of the original array is multiplied by 2.
